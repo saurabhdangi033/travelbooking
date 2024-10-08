@@ -11,12 +11,8 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-
-
-
 function App() {
   return (
-    <ApolloProvider client={client}>
     <Router>
       <div className="App">
         <Navbar />
@@ -26,7 +22,6 @@ function App() {
         </Routes>
       </div>
     </Router>
-    </ApolloProvider>
   );
 }
 

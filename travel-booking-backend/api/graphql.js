@@ -1,16 +1,22 @@
 const { ApolloServer } = require('apollo-server-express');
 const express = require('express');
+const cors = require('cors');  // Add CORS support
 const { typeDefs, resolvers } = require('./schema');
-const { ApolloServerPluginLandingPageGraphQLPlayground } = require('apollo-server-core');
 const mongoose = require('mongoose');
+const { ApolloServerPluginLandingPageGraphQLPlayground } = require('apollo-server-core');
 
-// Connect to MongoDB
-mongoose.connect('mongodb+srv://saurabhdangi01:test123@cluster0.bsole.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+const app = express();
+
+// Enable CORS
+app.use(cors({
+  origin: '*'  // Allow all origins or specify your frontend URL here
+}));
+
+// MongoDB connection
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-
-const app = express();
 
 const server = new ApolloServer({
   typeDefs,
