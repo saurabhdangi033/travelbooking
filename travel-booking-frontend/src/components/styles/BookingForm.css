@@ -1,0 +1,110 @@
+/* Booking Form Container */
+.booking-form {
+  max-width: 600px; /* Set maximum width for the form */
+  margin: 30px auto; /* Center the form horizontally */
+  padding: 60px;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #0a063b; /* White background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  font-family: 'Arial', sans-serif; /* Font style */
+}
+
+/* Booking Card Styling */
+.booking-card {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 0px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #0a063b;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image Styling */
+.booking-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+/* Form Header */
+.booking-form h2 {
+  text-align: center; /* Center the heading */
+  color: #e1e5ec; /* Header color */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 20px; /* Spacing below the header */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px; /* Spacing between form groups */
+}
+
+/* Labels */
+.form-group label {
+  display: block; /* Block display for label */
+  margin-bottom: 5px; /* Space below the label */
+  font-weight: bold; /* Bold font for labels */
+  color: #ede0e0; /* Label color */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Input Fields */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%; /* Full width inputs */
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  transition: border-color 0.3s ease; /* Smooth transition for border */
+}
+
+/* Focus Styles for Input Fields */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2575fc; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Textarea Specific Styling */
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing only */
+  min-height: 80px; /* Minimum height for textarea */
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%; /* Full width button */
+  padding: 10px; /* Padding for the button */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #2575fc; /* Button color */
+  margin-left: 10px;
+  margin-top: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white; /* Button text color */
+  font-size: 16px; /* Font size for button */
+  font-weight: bold; /* Bold font for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Button Hover Effect */
+button[type="submit"]:hover {
+  background-color: #1a5cb8; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .booking-form {
+    padding: 15px; /* Reduced padding on smaller screens */
+  }
+
+  .form-group {
+    margin-bottom: 10px; /* Reduced margin for form groups */
+  }
+}

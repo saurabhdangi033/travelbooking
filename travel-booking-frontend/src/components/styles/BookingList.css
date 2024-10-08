@@ -1,0 +1,80 @@
+.booking-list {
+  max-width: 1600px;
+  
+  padding: 0px;
+  border-radius: 8px;
+  background-color: #0a063b; /* White background for contrast */
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-list h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: rgb(249, 252, 255); /* Bootstrap primary color */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Space between header and table */
+}
+
+thead {
+  background-color: #1174de; /* Bootstrap primary color */
+  color: white;
+}
+
+th, td {
+  padding: 15px 10px; /* Increased padding for better spacing */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px; /* Slight spacing for clarity */
+}
+
+td {
+  font-size: 0.9rem; /* Slightly smaller font for data */
+  color: #efd9d9; /* Dark text color */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+tbody tr {
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+tbody tr:hover {
+  background-color: #2d8510; /* Light grey on hover */
+}
+
+
+.error, .loading {
+  text-align: center;
+  color: #FF0000; /* Red color for error messages */
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  th, td {
+    font-size: 0.8rem; /* Adjust font size for mobile */
+    padding: 10px; /* Smaller padding for mobile */
+  }
+  
+  .booking-list {
+    padding: 15px; /* Smaller padding for mobile */
+  }
+}
