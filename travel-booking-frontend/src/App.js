@@ -7,7 +7,7 @@ import './App.css';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'https://travelbookingbackend-j6o4.onrender.com/api/graphql',  // Use the Vercel deployed backend URL
+  uri: 'https://travelbookingbackend-j6o4.onrender.com/graphql',  // Use the Vercel deployed backend URL
   cache: new InMemoryCache(),
 });
 
